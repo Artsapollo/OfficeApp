@@ -33,9 +33,9 @@ public class OfficesServiceImpl implements OfficesService {
     }
 
     @Override
-    public Office getOfficeByCity(String city) {
-        LOG.debug("getOfficeByCity, city={}", city);
-        Office result = officesRepository.findById(city).orElse(null);
+    public Office getOfficeById(BigDecimal id) {
+        LOG.debug("getOfficeByCity, city={}", id);
+        Office result = officesRepository.findById(id).orElse(null);
         LOG.debug("findOfficeByCity, result={}", result);
         return result;
     }

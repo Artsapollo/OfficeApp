@@ -2,6 +2,7 @@ package springData.service;
 
 import dataBase.entity.Office;
 
+import java.math.BigDecimal;
 import java.util.Set;
 
 public interface OfficesService {
@@ -10,7 +11,7 @@ public interface OfficesService {
 
     Set<Office> findByTargetBetween(int minTarget, int maxTarget);
 
-    Office getOfficeByCity(String city);
+    Office getOfficeById(BigDecimal id);
 
     void insertOffice(Office office);
 

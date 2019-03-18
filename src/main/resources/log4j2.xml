@@ -24,15 +24,15 @@
         </RollingFile>
 
 
-        <SMTP name="FEMAIL"
+        <SMTP name="JARVIS"
               SMTPProtocol="smtps"
               SMTPHost="smtp.gmail.com"
               SMTPPort="465"
               SMTPUsername="lifeguardtrashbox@gmail.com"
-              SMTPPassword="rereheprf03"
+              SMTPPassword="xxxx"
               To="lifeguardtrashbox@gmail.com"
               from="lifeguardtrashbox@gmail.com"
-              Subject="Calculator Error Log">
+              Subject="Log Error">
         </SMTP>
 
     </Appenders>
@@ -42,7 +42,7 @@
         <AsyncLogger name="org.springframework" level="error" />
 
         <AsyncLogger name="error-logger" level="ERROR">
-            <AppenderRef ref="FEMAIL" />
+            <AppenderRef ref="JARVIS" />
         </AsyncLogger>
 
         <Root level="DEBUG" includeLocation="true">

@@ -107,19 +107,4 @@ public class Office implements java.io.Serializable {
 
         return buffer.toString();
     }
-
-    /*
-    StringBuffer buffer = new StringBuffer();
-
-        buffer.append(getClass().getName()).append("@").append(Integer.toHexString(hashCode())).append(" [");
-        buffer.append("office").append("='").append(getOffice()).append("' ");
-        buffer.append("city").append("='").append(getCity()).append("' ");
-        buffer.append("region").append("='").append(getRegion()).append("' ");
-        buffer.append("mgr").append("='").append(getMgr()).append("' ");
-        buffer.append("target").append("='").append(getTarget()).append("' ");
-        buffer.append("sales").append("='").append(getSales()).append("' ");
-        buffer.append("]");
-
-        return buffer.toString();
-     */
 }
