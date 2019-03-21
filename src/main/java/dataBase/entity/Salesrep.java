@@ -11,11 +11,11 @@ public class Salesrep implements java.io.Serializable {
     private BigDecimal emplNum;
     private Office office;
     private String name;
-    private BigDecimal age;
+    private java.math.BigDecimal age;
     private String title;
     private Date hireDate;
-    private BigDecimal quota;
-    private BigDecimal sales;
+    private java.math.BigDecimal quota;
+    private java.math.BigDecimal sales;
 
 
     public Salesrep() {
@@ -26,8 +26,8 @@ public class Salesrep implements java.io.Serializable {
         this.hireDate = hireDate;
     }
 
-    public Salesrep(BigDecimal emplNum, Office office, String name, BigDecimal age,
-                    String title, Date hireDate, BigDecimal quota, BigDecimal sales) {
+    public Salesrep(BigDecimal emplNum, Office office, String name, java.math.BigDecimal age,
+                    String title, Date hireDate, java.math.BigDecimal quota, java.math.BigDecimal sales) {
         this.emplNum = emplNum;
         this.office = office;
         this.name = name;

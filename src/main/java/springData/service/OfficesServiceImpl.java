@@ -33,7 +33,7 @@ public class OfficesServiceImpl implements OfficesService {
     }
 
     @Override
-    public Office getOfficeById(BigDecimal id) {
+    public Office findOfficeById(BigDecimal id) {
         LOG.debug("getOfficeByCity, city={}", id);
         Office result = officesRepository.findById(id).orElse(null);
         LOG.debug("findOfficeByCity, result={}", result);
@@ -55,10 +55,10 @@ public class OfficesServiceImpl implements OfficesService {
     }
 
     @Override
-    public void deleteOffice(Office office) {
+    public void deleteOffice(BigDecimal office) {
         LOG.debug("deleteOffice, office={}", office);
         try {
-            officesRepository.delete(office);
+            officesRepository.deleteById(office);
         } catch (EmptyResultDataAccessException e) {
             LOG.warn("Can not deleteOffice office{}, because it doesn't exist", office);
             throw new DeleteException("Can not delete Office " + office + ", because it doesn't exist");
@@ -70,7 +70,7 @@ public class OfficesServiceImpl implements OfficesService {
     public Set<Office> findByTargetBetween(int minTarget, int maxTarget) {
         LOG.debug("findByTargetBetween, min={}, max={}", minTarget, maxTarget);
         HashSet<Office> result = new HashSet<>(
-                officesRepository.findByTargetBetween(BigDecimal.valueOf(minTarget), BigDecimal.valueOf(maxTarget)));
+                officesRepository.findByTargetBetween(java.math.BigDecimal.valueOf(minTarget), java.math.BigDecimal.valueOf(maxTarget)));
         LOG.debug("findByTargetBetween, result={}", result);
         return result;
     }
