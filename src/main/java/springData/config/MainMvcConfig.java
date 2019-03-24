@@ -8,8 +8,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @EnableWebMvc
 @Configuration
-@ComponentScans({ @ComponentScan("config"), @ComponentScan("entity"), @ComponentScan("service"),
-        @ComponentScan("repository"), @ComponentScan("controller") })
+@ComponentScan("springData")
 public class MainMvcConfig extends AnnotationConfigWebApplicationContext {
 
 }

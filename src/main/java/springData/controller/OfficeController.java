@@ -5,6 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import springData.exception.DeleteException;
 import springData.service.OfficesService;
 
 @RestController
@@ -21,6 +22,7 @@ public class OfficeController {
         LOG.info("findOfficeById start, id={}", id);
         Office result = officesService.findOfficeById(java.math.BigDecimal.valueOf(id));
         LOG.info("findOfficeById end");
-        return result;
+        throw new DeleteException("ERROR");
+//        return result;
     }
 }
