@@ -12913,3 +12913,528 @@ DEBUG | 2019-03-17 23:11:22 | [main] jpa.HibernatePersistenceProvider	(Hibernate
 DEBUG | 2019-03-17 23:11:24 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
 DEBUG | 2019-03-17 23:29:12 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
 DEBUG | 2019-03-17 23:29:14 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
+DEBUG | 2019-03-18 01:10:08 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-18 01:10:10 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
+DEBUG | 2019-03-18 14:17:55 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-18 14:17:56 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
+DEBUG | 2019-03-18 14:23:36 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-18 14:23:37 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
+DEBUG | 2019-03-18 14:25:02 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-18 14:25:02 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
+DEBUG | 2019-03-18 14:26:21 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-18 14:26:21 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
+DEBUG | 2019-03-21 07:22:55 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 07:22:56 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
+DEBUG | 2019-03-21 07:40:13 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 07:40:13 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+ERROR | 2019-03-21 07:40:20 | [main] spi.SqlExceptionHelper	(SqlExceptionHelper.java:142) -- Table "OFFICES" not found; SQL statement:
+select office0_.OFFICE as OFFICE1_1_, office0_.CITY as CITY2_1_, office0_.REGION as REGION3_1_, office0_.SALES as SALES4_1_, office0_.TARGET as TARGET5_1_ from OFFICES office0_ [42102-198]
+DEBUG | 2019-03-21 07:42:13 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 07:42:13 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+DEBUG | 2019-03-21 07:47:59 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 07:47:59 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+ERROR | 2019-03-21 07:48:05 | [main] spi.SqlExceptionHelper	(SqlExceptionHelper.java:142) -- Table "OFFICES" not found; SQL statement:
+select office0_.OFFICE as OFFICE1_1_, office0_.CITY as CITY2_1_, office0_.REGION as REGION3_1_, office0_.SALES as SALES4_1_, office0_.TARGET as TARGET5_1_ from OFFICES office0_ [42102-198]
+DEBUG | 2019-03-21 11:29:37 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 11:29:38 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+DEBUG | 2019-03-21 15:06:12 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 15:06:13 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
+DEBUG | 2019-03-21 15:06:28 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:594) -- Refreshing ApplicationContext 'mainMvcConfig'
+DEBUG | 2019-03-21 15:06:30 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:1002) -- Closing ApplicationContext 'mainMvcConfig', started on Thu Mar 21 15:06:28 EET 2019
+DEBUG | 2019-03-21 15:21:36 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 15:21:37 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
+DEBUG | 2019-03-21 16:08:29 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 16:08:30 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+ERROR | 2019-03-21 16:08:41 | [main] spi.SqlExceptionHelper	(SqlExceptionHelper.java:142) -- Table "OFFICES" not found; SQL statement:
+select office0_.OFFICE as OFFICE1_1_, office0_.CITY as CITY2_1_, office0_.REGION as REGION3_1_, office0_.SALES as SALES4_1_, office0_.TARGET as TARGET5_1_ from OFFICES office0_ [42102-198]
+DEBUG | 2019-03-21 16:49:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:29) -- getAllOffices
+DEBUG | 2019-03-21 16:49:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:31) -- getAllOffices return 2 records
+DEBUG | 2019-03-21 16:49:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:37) -- getOfficeByCity, city=11
+DEBUG | 2019-03-21 16:49:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:39) -- findOfficeByCity, result=dataBase.entity.Office@2dca0d64 [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 16:49:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:45) -- insertOffice, office=dataBase.entity.Office@77b14724 [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 16:49:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:47) -- insertOffice completed
+DEBUG | 2019-03-21 16:49:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:52) -- updateOffice, office=dataBase.entity.Office@447a020 [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 16:49:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:54) -- updateOffice completed
+DEBUG | 2019-03-21 16:49:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:59) -- deleteOffice, office=dataBase.entity.Office@767e20cf [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 16:49:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:66) -- deleteOffice completed
+DEBUG | 2019-03-21 16:55:02 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:59) -- deleteOffice, office=null
+DEBUG | 2019-03-21 16:55:02 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:66) -- deleteOffice completed
+DEBUG | 2019-03-21 16:56:04 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:29) -- getAllOffices
+DEBUG | 2019-03-21 16:56:04 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:31) -- getAllOffices return 2 records
+DEBUG | 2019-03-21 16:56:04 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:37) -- getOfficeByCity, city=11
+DEBUG | 2019-03-21 16:56:04 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:39) -- findOfficeByCity, result=dataBase.entity.Office@23aa363a [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 16:56:04 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:45) -- insertOffice, office=dataBase.entity.Office@604f2bd2 [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 16:56:04 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:47) -- insertOffice completed
+DEBUG | 2019-03-21 16:56:04 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:52) -- updateOffice, office=dataBase.entity.Office@6d23017e [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 16:56:04 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:54) -- updateOffice completed
+DEBUG | 2019-03-21 16:56:04 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:59) -- deleteOffice, office=null
+DEBUG | 2019-03-21 16:56:04 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:66) -- deleteOffice completed
+DEBUG | 2019-03-21 18:52:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:58) -- deleteOffice, office=null
+DEBUG | 2019-03-21 18:52:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:65) -- deleteOffice completed
+DEBUG | 2019-03-21 19:09:03 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:29) -- getAllOffices
+DEBUG | 2019-03-21 19:09:03 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:31) -- getAllOffices return 2 records
+DEBUG | 2019-03-21 19:09:03 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:37) -- getOfficeByCity, city=11
+DEBUG | 2019-03-21 19:09:03 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:39) -- findOfficeByCity, result=dataBase.entity.Office@1ecee32c [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 19:09:03 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:45) -- insertOffice, office=dataBase.entity.Office@1f6c9cd8 [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 19:09:03 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:47) -- insertOffice completed
+DEBUG | 2019-03-21 19:09:03 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:52) -- updateOffice, office=dataBase.entity.Office@35d08e6c [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 19:09:03 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:54) -- updateOffice completed
+DEBUG | 2019-03-21 19:09:03 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:59) -- deleteOffice, office=null
+DEBUG | 2019-03-21 19:09:03 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:66) -- deleteOffice completed
+DEBUG | 2019-03-21 19:10:02 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 19:10:03 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+ERROR | 2019-03-21 19:10:07 | [main] context.TestContextManager	(TestContextManager.java:250) -- Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7f7af971] to prepare test instance [springData.repository.OfficesRepositoryIntegrationH2Test@23382f76]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in springData.config.DataConfig: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: dataBase.entity.Salesrep.repOffice in dataBase.entity.Office.salesreps
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 more
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: dataBase.entity.Salesrep.repOffice in dataBase.entity.Office.salesreps
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:842) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:793) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:54) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1684) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1652) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:286) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:903) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:934) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createContainerEntityManagerFactory(HibernatePersistenceProvider.java:141) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 more
+DEBUG | 2019-03-21 19:14:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:52) -- updateOffice, office=dataBase.entity.Office@130dca52 [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 19:14:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:54) -- updateOffice completed
+DEBUG | 2019-03-21 19:14:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:59) -- deleteOffice, office=null
+DEBUG | 2019-03-21 19:14:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:66) -- deleteOffice completed
+DEBUG | 2019-03-21 19:14:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:37) -- getOfficeByCity, city=11
+DEBUG | 2019-03-21 19:14:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:39) -- findOfficeByCity, result=dataBase.entity.Office@77b14724 [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 19:14:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:29) -- getAllOffices
+DEBUG | 2019-03-21 19:14:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:31) -- getAllOffices return 2 records
+DEBUG | 2019-03-21 19:14:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:45) -- insertOffice, office=dataBase.entity.Office@363042d7 [office='null' city='null' region='null' target='null' sales='null' ]
+DEBUG | 2019-03-21 19:14:16 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:47) -- insertOffice completed
+DEBUG | 2019-03-21 19:15:02 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 19:15:03 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+ERROR | 2019-03-21 19:15:05 | [main] context.TestContextManager	(TestContextManager.java:250) -- Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7f7af971] to prepare test instance [springData.repository.OfficesRepositoryIntegrationH2Test@23382f76]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in springData.config.DataConfig: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: dataBase.entity.Salesrep.repOffice in dataBase.entity.Office.salesreps
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 more
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: dataBase.entity.Salesrep.repOffice in dataBase.entity.Office.salesreps
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:842) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:793) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:54) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1684) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1652) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:286) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:903) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:934) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createContainerEntityManagerFactory(HibernatePersistenceProvider.java:141) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 more
+DEBUG | 2019-03-21 19:17:50 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 19:17:51 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+ERROR | 2019-03-21 19:17:55 | [main] context.TestContextManager	(TestContextManager.java:250) -- Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@14d8444b] to prepare test instance [springData.repository.OfficesRepositoryIntegrationH2Test@71466383]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in springData.config.DataConfig: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: OFFICES, for columns: [org.hibernate.mapping.Column(salesreps)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 more
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: OFFICES, for columns: [org.hibernate.mapping.Column(salesreps)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: OFFICES, for columns: [org.hibernate.mapping.Column(salesreps)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:486) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:453) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:226) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:624) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:343) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:461) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:938) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createContainerEntityManagerFactory(HibernatePersistenceProvider.java:141) ~[hibernate-core-5.4.1.Final.jar:5.4.1.Final]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 24 more
+DEBUG | 2019-03-21 19:21:01 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 19:21:02 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+ERROR | 2019-03-21 19:21:09 | [main] spi.SqlExceptionHelper	(SqlExceptionHelper.java:142) -- Column "OFFICE0_.REGION" not found; SQL statement:
+select office0_.OFFICE as OFFICE1_0_, office0_.CITY as CITY2_0_, office0_.REGION as REGION3_0_, office0_.SALES as SALES4_0_, office0_.TARGET as TARGET5_0_ from MA_STUDENT.OFFICES office0_ [42122-198]
+DEBUG | 2019-03-21 19:23:59 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 19:24:00 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+DEBUG | 2019-03-21 19:30:13 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-21 19:30:14 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+ERROR | 2019-03-21 19:30:19 | [main] context.TestContextManager	(TestContextManager.java:250) -- Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1b3ab4f9] to prepare test instance [springData.repository.OfficesRepositoryIntegrationH2Test@5c6a5192]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springData.repository.OfficesRepositoryIntegrationH2Test': Unsatisfied dependency expressed through field 'officesService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'springData.service.OfficesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'springData.service.OfficesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 27 more
+ERROR | 2019-03-21 19:30:19 | [main] context.TestContextManager	(TestContextManager.java:250) -- Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1b3ab4f9] to prepare test instance [springData.repository.OfficesRepositoryIntegrationH2Test@5ef85555]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springData.repository.OfficesRepositoryIntegrationH2Test': Unsatisfied dependency expressed through field 'officesService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'springData.service.OfficesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'springData.service.OfficesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 27 more
+ERROR | 2019-03-21 19:30:19 | [main] context.TestContextManager	(TestContextManager.java:250) -- Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1b3ab4f9] to prepare test instance [springData.repository.OfficesRepositoryIntegrationH2Test@66e17eff]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springData.repository.OfficesRepositoryIntegrationH2Test': Unsatisfied dependency expressed through field 'officesService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'springData.service.OfficesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'springData.service.OfficesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 27 more
+ERROR | 2019-03-21 19:30:19 | [main] context.TestContextManager	(TestContextManager.java:250) -- Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1b3ab4f9] to prepare test instance [springData.repository.OfficesRepositoryIntegrationH2Test@721d5b74]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springData.repository.OfficesRepositoryIntegrationH2Test': Unsatisfied dependency expressed through field 'officesService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'springData.service.OfficesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'springData.service.OfficesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 27 more
+ERROR | 2019-03-21 19:30:19 | [main] context.TestContextManager	(TestContextManager.java:250) -- Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1b3ab4f9] to prepare test instance [springData.repository.OfficesRepositoryIntegrationH2Test@7069f076]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springData.repository.OfficesRepositoryIntegrationH2Test': Unsatisfied dependency expressed through field 'officesService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'springData.service.OfficesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'springData.service.OfficesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 27 more

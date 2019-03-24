@@ -29,7 +29,7 @@
               SMTPHost="smtp.gmail.com"
               SMTPPort="465"
               SMTPUsername="lifeguardtrashbox@gmail.com"
-              SMTPPassword="xxxx"
+              SMTPPassword="xxxxxxxxxxx"
               To="lifeguardtrashbox@gmail.com"
               from="lifeguardtrashbox@gmail.com"
               Subject="Log Error">
