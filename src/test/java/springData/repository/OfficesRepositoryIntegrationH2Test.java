@@ -15,13 +15,13 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import springData.config.DataConfig;
-import springData.service.OfficesService;
 
 import javax.sql.DataSource;
 
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 import static org.junit.Assert.*;
 
@@ -31,17 +31,14 @@ import static org.junit.Assert.*;
 @TestPropertySource("classpath:springData/test.properties")
 public class OfficesRepositoryIntegrationH2Test {
 
-    private static final Office NOT_EXIST_OFFICE_INSERT = new Office(BigDecimal.valueOf(333333), null,null,null);
-    private static final Office ALREADY_EXIST_OFFICE_UPDATE = new Office(BigDecimal.valueOf(111111),"Gotham",null,null);
-    private static final Office ALREADY_EXIST_OFFICE_DELETE = new Office(BigDecimal.valueOf(333333),null,null,null);
+    private static final Office INSERT_OFFICE = new Office(BigDecimal.valueOf(3333), "StarCity","Star",BigDecimal.valueOf(105));
+    private static final Office UPDATE_OFFICE = new Office(BigDecimal.valueOf(1111),"Gotham","Gotham",BigDecimal.valueOf(501));
+    private static final Office DELETE_OFFICE = new Office(BigDecimal.valueOf(3333),null,null,null);
     private static final BigDecimal NOT_EXIST_OFFICE_ID = BigDecimal.valueOf(-1);
 
 
     @Autowired
     private OfficesRepository officesRepository;
-
-    @Autowired
-    private OfficesService officesService;
 
     @Autowired
     private DataSource dataSource;
@@ -55,6 +52,12 @@ public class OfficesRepositoryIntegrationH2Test {
     }
 
     @Test
+    public void testFindByTargetBetween() {
+        Set<Office> office = officesRepository.findByTargetBetween(BigDecimal.valueOf(300), BigDecimal.valueOf(600));
+        assertNotNull(office.size() == 1);
+    }
+
+    @Test
     public void testGetAllOffices(){
         List<Office> office = officesRepository.findAll();
         System.out.println(office);
@@ -64,25 +67,31 @@ public class OfficesRepositoryIntegrationH2Test {
     @Test
     public void testFindOfficeById() {
         Optional<Office> office = officesRepository.findById(BigDecimal.valueOf(1111));
-        assertTrue(office.isPresent());
+        assertNotNull(office.isPresent());
+    }
+
+    @Test
+    public void testFindOfficeByIdNotExist() {
+        Optional<Office> office = officesRepository.findById(NOT_EXIST_OFFICE_ID);
+        assertFalse(office.isPresent());
     }
 
     @Test
     public void testInsertOffice() {
-        officesRepository.saveAndFlush(NOT_EXIST_OFFICE_INSERT);
+        officesRepository.save(INSERT_OFFICE);
     }
 
     @Test
     public void testUpdateOffice() {
-        ALREADY_EXIST_OFFICE_UPDATE.setSales(BigDecimal.valueOf(-333));
-        ALREADY_EXIST_OFFICE_UPDATE.setTarget(BigDecimal.valueOf(-111));
-        officesRepository.save(ALREADY_EXIST_OFFICE_UPDATE);
-        System.out.println(ALREADY_EXIST_OFFICE_UPDATE);
+        UPDATE_OFFICE.setCity("Akropol");
+        UPDATE_OFFICE.setSales(BigDecimal.valueOf(123994));
+        officesRepository.save(UPDATE_OFFICE);
+        System.out.println(UPDATE_OFFICE);
     }
 
     @Test
     public void testDeleteOffice() {
-        officesRepository.delete(ALREADY_EXIST_OFFICE_DELETE);
+        officesRepository.delete(INSERT_OFFICE);
     }
 
 }
