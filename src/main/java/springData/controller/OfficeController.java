@@ -21,7 +21,8 @@ public class OfficeController {
     private OfficesService officesService;
 
     @GetMapping
-    public @ResponseBody Set<Office> findOfficeByTargetBetween(@RequestParam(value = "min", required = false) Integer minTarget,
+    public @ResponseBody
+    Set<Office> findOfficeByTargetBetween(@RequestParam(value = "min", required = false) Integer minTarget,
                                           @RequestParam(value = "max", required = false) Integer maxTarget) {
         LOG.info("findByTargetBetween start, min={}, max={}", minTarget, maxTarget);
         if (Objects.isNull(maxTarget) || Objects.isNull(minTarget)) {
@@ -34,7 +35,8 @@ public class OfficeController {
     }
 
     @GetMapping("/{id}")
-    public @ResponseBody Office getOfficeById(@PathVariable("id") Integer id) {
+    public @ResponseBody
+    Office getOfficeById(@PathVariable("id") Integer id) {
         LOG.info("findOfficeById start, id={}", id);
         Office result = officesService.findOfficeById(BigDecimal.valueOf(id));
         LOG.info("findOfficeById end");
@@ -61,25 +63,4 @@ public class OfficeController {
         officesService.deleteOffice(BigDecimal.valueOf(id));
         LOG.info("Office deleted");
     }
-    /*
-    @DeleteMapping("/{id}")
-	public void deleteOrderById(@PathVariable("id") int id) {
-		LOG.info("deleteOrderById start, id={}", id);
-		ordersService.deleteOrder(BigDecimal.valueOf(id));
-		LOG.info("deleteOrderById end");
-	}
-     */
 }
-/*
- public void deleteOfficeById(@PathVariable("id") Integer id) {
-        LOG.info("Deleting office id={}", id);
-        Office office = officesService.findOfficeById(BigDecimal.valueOf(id));
-        if (Objects.isNull(office)) {
-            LOG.warn("Deleting failed, Office is null");
-            throw new UpdateException("Could not delete Office id= " + id + ", it does not exist.");
-        } else {
-            officesService.deleteOffice(id);
-        }
-        LOG.info("Office deleted.");
-    }
- */
