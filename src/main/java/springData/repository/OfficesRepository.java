@@ -13,7 +13,7 @@ import java.util.Set;
 @Repository
 public interface OfficesRepository extends JpaRepository<Office, java.math.BigDecimal> {
 
-    @Cacheable("officeCashed")
+    @Cacheable("findByTargetBetween")
     Set<Office> findByTargetBetween(BigDecimal minQty, BigDecimal maxQty);
 
 }

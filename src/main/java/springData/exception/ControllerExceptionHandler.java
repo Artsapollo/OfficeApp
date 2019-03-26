@@ -24,16 +24,15 @@ public class ControllerExceptionHandler {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public @ResponseBody
     ErrorMessage unexpected(Exception e) {
-        LOGMAIL.error("Unexpected exception {}", e.getMessage());
+        LOG.error("Unexpected exception {}", e.getMessage());
         return new ErrorMessage(e.getMessage());
     }
 
-    @ExceptionHandler(value = {DeleteException.class})
+    @ExceptionHandler(value = {DeleteException.class, UpdateException.class})
     @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
     public @ResponseBody
     ErrorMessage entityExistingProblem(Exception e) {
-        LOG.warn("Unprocesable entity {}", e.getMessage());
+        LOG.warn("Unprocessable entity {}", e.getMessage());
         return new ErrorMessage(e.getMessage());
     }
-
 }

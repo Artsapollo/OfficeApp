@@ -11,10 +11,9 @@ import org.mockito.junit.MockitoJUnitRunner;
 import springData.repository.OfficesRepository;
 
 import java.math.BigDecimal;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static org.junit.Assert.*;
 import static org.mockito.ArgumentMatchers.any;
@@ -32,8 +31,17 @@ public class OfficesServiceIntegrationTest {
     private Office office2 = new Office();
 
     @Test
+    public void testFindByTargetBetween() {
+        Set<Office> office = Stream.of(office1, office2).collect(Collectors.toSet());
+        doReturn(office).when(officesRepository).findByTargetBetween(any(), any());
+        Set<Office> result = officesService.findByTargetBetween(0, 0);
+        assertTrue(office.containsAll(result) && result.containsAll(office));
+
+    }
+
+    @Test
     public void testGetAllOffices() {
-        List<Office> office = Arrays.asList(office1, office2);
+        List<Office> office = Arrays.asList(new Office[] { office1, office2 });
         doReturn(office).when(officesRepository).findAll();
         Set<Office> result = officesService.getAllOffices();
         assertTrue(office.containsAll(result) && result.containsAll(office));

@@ -41,7 +41,7 @@
         <AsyncLogger name="org.hibernate" level="error" />
         <AsyncLogger name="org.springframework" level="error" />
 
-        <AsyncLogger name="error-logger" level="ERROR">
+        <AsyncLogger name="error-logger" level="DEBUG">
             <AppenderRef ref="JARVIS" />
         </AsyncLogger>
 
