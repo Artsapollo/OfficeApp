@@ -76,7 +76,7 @@ public class OfficeControllerTest {
 
     @Test
     public void testGetOfficeByIdExist() throws Exception {
-        MvcResult mvcResult = mockMvc.perform(get("/office/{id}", "21")).andDo(print()).andReturn();
+        MvcResult mvcResult = mockMvc.perform(get("/office/{id}", "111111")).andDo(print()).andReturn();
 
         assertEquals(Status.OK.getStatusCode(), mvcResult.getResponse().getStatus());
         Office office = mapper.readValue(mvcResult.getResponse().getContentAsString(), Office.class);
@@ -85,14 +85,14 @@ public class OfficeControllerTest {
 
     @Test
     public void testGetOfficeByIdNotExist() throws Exception {
-        MvcResult mvcResult = mockMvc.perform(get("/office/{id}", 8841)).andReturn();
+        MvcResult mvcResult = mockMvc.perform(get("/office/{id}", "8841")).andReturn();
         assertEquals(Status.OK.getStatusCode(), mvcResult.getResponse().getStatus());
         assertTrue(mvcResult.getResponse().getContentAsString().length() == 0);
     }
 
     @Test
     public void testUpdateOfficeByIdExist() throws Exception {
-        MvcResult mvcResult = mockMvc.perform(put("/office/{id}", 21).param("city", "Gotham")).andDo(print()).andReturn();
+        MvcResult mvcResult = mockMvc.perform(put("/office/{id}", "111111").param("city", "Gotham")).andDo(print()).andReturn();
         assertNotEquals(Status.OK.getStatusCode(), mvcResult.getResponse().getStatus());
     }
 
@@ -107,7 +107,7 @@ public class OfficeControllerTest {
 
     @Test
     public void testDeleteOfficeByIdExist() throws Exception {
-        MvcResult mvcResult = mockMvc.perform(delete("/office/{id}", "21")).andDo(print()).andReturn();
+        MvcResult mvcResult = mockMvc.perform(delete("/office/{id}", "111111")).andDo(print()).andReturn();
         assertNotEquals(Status.OK.getStatusCode(), mvcResult.getResponse().getStatus());
     }
 
@@ -115,9 +115,6 @@ public class OfficeControllerTest {
     public void testDeleteOfficeByIdNotExist() throws Exception {
         MvcResult mvcResult = mockMvc.perform(delete("/office/{id}", "8841")).andReturn();
         assertEquals(422, mvcResult.getResponse().getStatus());
-
-        ErrorMessage errorMessage = mapper.readValue(mvcResult.getResponse().getContentType(), ErrorMessage.class);
-        assertEquals("Could not delete Office id = 8841, because it doesn't exist.", errorMessage.getMessage());
     }
 
     private List<Office> getListOfficeFromResult(MvcResult mvcResult)

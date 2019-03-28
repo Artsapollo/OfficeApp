@@ -1,1 +1,0 @@
-{"message":"org.hibernate.exception.ConstraintViolationException: could not execute statement; nested exception is javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement"}
