@@ -1,23 +1,28 @@
 package springData.dto;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 
 public class OfficeRequest {
-    @Min(value = 104, message = "1")
+    @Min(value = 100, message = "1")
+    @Max(value = 200, message = "1")
+    @NotNull(message = "6")
     private BigDecimal office;
 
-    @Size(min = 3, max = 10, message = "2")
+    @Size(min = 4, max = 10, message = "2")
+    @NotNull(message = "6")
     private String city;
 
-    @Size(min = 3, max = 10, message = "3")
+    @Size(min = 4, max = 10, message = "3")
+    @NotNull(message = "6")
     private String region;
 
     @Valid
-    @NotNull(message = "Not null under valid")
+    @NotNull(message = "6")
     private OfficeDetails officeDetails;
 
     public BigDecimal getOffice() {

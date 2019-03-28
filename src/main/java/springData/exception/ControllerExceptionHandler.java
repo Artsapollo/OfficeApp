@@ -49,12 +49,13 @@ public class ControllerExceptionHandler {
 
     @PostConstruct
     private void intValidationCodeDescription(){
-        validationCodeDescription.put("1", "office number must not be greater then 500");
+        validationCodeDescription.put("1", "office number must be between 100 and 200");
         validationCodeDescription.put("2", "we work only in 10 letters cities");
         validationCodeDescription.put("3", "only 'S' letter regions required");
         validationCodeDescription.put("4", "monthly sales must be greater then target 25000");
-        validationCodeDescription.put("5", "monthly target must be greater then 25000");
-        validationCodeDescription.put("6", "is it office details?");
+        validationCodeDescription.put("5", "Monthly target must be greater then 25000");
+        validationCodeDescription.put("6", "Can not be null!");
+
     }
 
 }

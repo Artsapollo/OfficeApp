@@ -8,11 +8,11 @@ import java.math.BigDecimal;
 
 public class DtoModelsUtil {
 
-    private static final BigDecimal OFFICE = BigDecimal.valueOf(404);
+    private static final BigDecimal OFFICE = BigDecimal.valueOf(105);
     private static final String CITY = "Kyiv";
-    private static final String REGION = "Kyivsky";
+    private static final String REGION = "Street";
     private static final BigDecimal TARGET = BigDecimal.valueOf(45000);
-    private static final BigDecimal SALES = BigDecimal.valueOf(50000);
+    private static final BigDecimal SALES = BigDecimal.valueOf(49000);
 
     public static Office office(){
         Office expected = new Office();

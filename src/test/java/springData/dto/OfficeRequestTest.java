@@ -22,7 +22,6 @@ public class OfficeRequestTest {
     public void setUp() {
         LocalValidatorFactoryBean localValidatorFactory = new LocalValidatorFactoryBean();
         localValidatorFactory.setProviderClass(HibernateValidator.class);
-        localValidatorFactory.afterPropertiesSet();
         validator = localValidatorFactory;
     }
 
@@ -94,6 +93,6 @@ public class OfficeRequestTest {
         officeRequest.setOfficeDetails(null);
         Errors errors = new BeanPropertyBindingResult(officeRequest, "officeRequest");
         validator.validate(officeRequest, errors);
-        assertEquals(errors.getFieldError("officeDetails").getDefaultMessage(), "6");
+        assertEquals(errors.getFieldError("officeDetails").getDefaultMessage(), "4");
     }
 }

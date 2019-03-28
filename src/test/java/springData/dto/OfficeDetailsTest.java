@@ -22,7 +22,6 @@ public class OfficeDetailsTest {
     public void setUp() {
         LocalValidatorFactoryBean localValidatorFactory = new LocalValidatorFactoryBean();
         localValidatorFactory.setProviderClass(HibernateValidator.class);
-        localValidatorFactory.afterPropertiesSet();
         validator = localValidatorFactory;
     }
 

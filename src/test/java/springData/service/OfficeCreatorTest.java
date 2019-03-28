@@ -18,5 +18,4 @@ public class OfficeCreatorTest {
         Office expected = DtoModelsUtil.office();
         assertNotEquals(expected, actual);
     }
-    //Objects are equals but hashCodes not
 }
