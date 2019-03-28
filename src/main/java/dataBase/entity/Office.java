@@ -3,6 +3,7 @@ package dataBase.entity;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -111,5 +112,22 @@ public class Office implements java.io.Serializable {
         buffer.append("]");
 
         return buffer.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Office office1 = (Office) o;
+        return Objects.equals(office, office1.office) &&
+                Objects.equals(city, office1.city) &&
+                Objects.equals(region, office1.region) &&
+                Objects.equals(target, office1.target) &&
+                Objects.equals(sales, office1.sales);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(office, city, region, target, sales);
     }
 }

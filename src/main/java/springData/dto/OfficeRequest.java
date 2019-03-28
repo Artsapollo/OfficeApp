@@ -6,6 +6,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
+import java.util.Objects;
 
 public class OfficeRequest {
     @Min(value = 100, message = "1")
@@ -65,5 +66,21 @@ public class OfficeRequest {
                 ", region='" + region + '\'' +
                 ", officeDetails=" + officeDetails +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        OfficeRequest that = (OfficeRequest) o;
+        return Objects.equals(office, that.office) &&
+                Objects.equals(city, that.city) &&
+                Objects.equals(region, that.region) &&
+                Objects.equals(officeDetails, that.officeDetails);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(office, city, region, officeDetails);
     }
 }

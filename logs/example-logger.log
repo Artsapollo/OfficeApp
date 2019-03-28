@@ -13438,3 +13438,159 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
 	... 27 more
+DEBUG | 2019-03-26 18:44:57 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-26 18:44:58 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+DEBUG | 2019-03-26 18:45:03 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:594) -- Refreshing ApplicationContext 'mainMvcConfig'
+DEBUG | 2019-03-26 18:45:07 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:54) -- initialising the handler methods
+INFO  | 2019-03-26 18:45:07 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:69) -- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+DEBUG | 2019-03-26 18:45:08 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office
+INFO  | 2019-03-26 18:45:09 | [main] controller.OfficeController	(OfficeController.java:27) -- findByTargetBetween start, min=300, max=600
+DEBUG | 2019-03-26 18:45:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:29) -- findByTargetBetween, min=300, max=600
+DEBUG | 2019-03-26 18:45:09 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:32) -- findByTargetBetween, result=[]
+INFO  | 2019-03-26 18:45:09 | [main] controller.OfficeController	(OfficeController.java:33) -- findOfficeByTargetBetween done.
+DEBUG | 2019-03-26 18:45:10 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/21
+INFO  | 2019-03-26 18:45:10 | [main] controller.OfficeController	(OfficeController.java:40) -- findOfficeById start, id=21
+DEBUG | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:46) -- findOfficeByCity, city=21
+DEBUG | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:48) -- findOfficeByCity, result=null
+INFO  | 2019-03-26 18:45:10 | [main] controller.OfficeController	(OfficeController.java:42) -- findOfficeById end
+DEBUG | 2019-03-26 18:45:10 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/8841
+INFO  | 2019-03-26 18:45:10 | [main] controller.OfficeController	(OfficeController.java:62) -- Deleting office id=8841
+DEBUG | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:68) -- delete Office, office=8841
+WARN  | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:72) -- Can't delete Office office8841, because it doesn't exist
+WARN  | 2019-03-26 18:45:10 | [main] exception.ControllerExceptionHandler	(ControllerExceptionHandler.java:35) -- Unprocessable entity Can not delete Office 8841, because it doesn't exist
+DEBUG | 2019-03-26 18:45:10 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/8841
+INFO  | 2019-03-26 18:45:10 | [main] controller.OfficeController	(OfficeController.java:40) -- findOfficeById start, id=8841
+DEBUG | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:46) -- findOfficeByCity, city=8841
+DEBUG | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:48) -- findOfficeByCity, result=null
+INFO  | 2019-03-26 18:45:10 | [main] controller.OfficeController	(OfficeController.java:42) -- findOfficeById end
+DEBUG | 2019-03-26 18:45:10 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/21
+INFO  | 2019-03-26 18:45:10 | [main] controller.OfficeController	(OfficeController.java:62) -- Deleting office id=21
+DEBUG | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:68) -- delete Office, office=21
+WARN  | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:72) -- Can't delete Office office21, because it doesn't exist
+WARN  | 2019-03-26 18:45:10 | [main] exception.ControllerExceptionHandler	(ControllerExceptionHandler.java:35) -- Unprocessable entity Can not delete Office 21, because it doesn't exist
+DEBUG | 2019-03-26 18:45:10 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/8841
+INFO  | 2019-03-26 18:45:10 | [main] controller.OfficeController	(OfficeController.java:48) -- Updating Office id=8841, city=Noir
+DEBUG | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:46) -- findOfficeByCity, city=8841
+DEBUG | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:48) -- findOfficeByCity, result=null
+WARN  | 2019-03-26 18:45:10 | [main] controller.OfficeController	(OfficeController.java:51) -- Updating failed, Office is null
+WARN  | 2019-03-26 18:45:10 | [main] exception.ControllerExceptionHandler	(ControllerExceptionHandler.java:35) -- Unprocessable entity Could not update Office id= 8841 , it doesn't exist.
+DEBUG | 2019-03-26 18:45:10 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/21
+INFO  | 2019-03-26 18:45:10 | [main] controller.OfficeController	(OfficeController.java:48) -- Updating Office id=21, city=Gotham
+DEBUG | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:46) -- findOfficeByCity, city=21
+DEBUG | 2019-03-26 18:45:10 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:48) -- findOfficeByCity, result=null
+WARN  | 2019-03-26 18:45:10 | [main] controller.OfficeController	(OfficeController.java:51) -- Updating failed, Office is null
+WARN  | 2019-03-26 18:45:10 | [main] exception.ControllerExceptionHandler	(ControllerExceptionHandler.java:35) -- Unprocessable entity Could not update Office id= 21 , it doesn't exist.
+DEBUG | 2019-03-26 18:45:10 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:1002) -- Closing ApplicationContext 'mainMvcConfig', started on Tue Mar 26 18:45:03 EET 2019
+DEBUG | 2019-03-26 18:51:50 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-26 18:51:51 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+DEBUG | 2019-03-26 18:51:54 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:594) -- Refreshing ApplicationContext 'mainMvcConfig'
+DEBUG | 2019-03-26 18:51:57 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:54) -- initialising the handler methods
+INFO  | 2019-03-26 18:51:57 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:69) -- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+DEBUG | 2019-03-26 18:51:58 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/111111
+INFO  | 2019-03-26 18:51:58 | [main] controller.OfficeController	(OfficeController.java:40) -- findOfficeById start, id=111111
+DEBUG | 2019-03-26 18:51:58 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:46) -- findOfficeByCity, city=111111
+DEBUG | 2019-03-26 18:51:58 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:48) -- findOfficeByCity, result=dataBase.entity.Office@39f4a7c4 [office='111111' city='Stormwind' region='null' target='1488' sales='67' ]
+INFO  | 2019-03-26 18:51:58 | [main] controller.OfficeController	(OfficeController.java:42) -- findOfficeById end
+DEBUG | 2019-03-26 18:51:58 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:1002) -- Closing ApplicationContext 'mainMvcConfig', started on Tue Mar 26 18:51:54 EET 2019
+DEBUG | 2019-03-26 18:52:29 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-26 18:52:30 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+DEBUG | 2019-03-26 18:52:33 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:594) -- Refreshing ApplicationContext 'mainMvcConfig'
+DEBUG | 2019-03-26 18:52:36 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:54) -- initialising the handler methods
+INFO  | 2019-03-26 18:52:36 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:69) -- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+DEBUG | 2019-03-26 18:52:37 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/8841
+INFO  | 2019-03-26 18:52:37 | [main] controller.OfficeController	(OfficeController.java:62) -- Deleting office id=8841
+DEBUG | 2019-03-26 18:52:37 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:68) -- delete Office, office=8841
+WARN  | 2019-03-26 18:52:37 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:72) -- Can't delete Office office8841, because it doesn't exist
+WARN  | 2019-03-26 18:52:37 | [main] exception.ControllerExceptionHandler	(ControllerExceptionHandler.java:35) -- Unprocessable entity Can not delete Office 8841, because it doesn't exist
+DEBUG | 2019-03-26 18:52:37 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:1002) -- Closing ApplicationContext 'mainMvcConfig', started on Tue Mar 26 18:52:33 EET 2019
+DEBUG | 2019-03-26 18:57:16 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-26 18:57:17 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+DEBUG | 2019-03-26 18:57:20 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:594) -- Refreshing ApplicationContext 'mainMvcConfig'
+DEBUG | 2019-03-26 18:57:23 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:54) -- initialising the handler methods
+INFO  | 2019-03-26 18:57:23 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:69) -- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+DEBUG | 2019-03-26 18:57:24 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/8841
+INFO  | 2019-03-26 18:57:24 | [main] controller.OfficeController	(OfficeController.java:62) -- Deleting office id=8841
+DEBUG | 2019-03-26 18:57:24 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:68) -- delete Office, office=8841
+WARN  | 2019-03-26 18:57:24 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:72) -- Can't delete Office office8841, because it doesn't exist
+WARN  | 2019-03-26 18:57:24 | [main] exception.ControllerExceptionHandler	(ControllerExceptionHandler.java:35) -- Unprocessable entity Can not delete Office 8841, because it doesn't exist
+DEBUG | 2019-03-26 18:57:24 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:1002) -- Closing ApplicationContext 'mainMvcConfig', started on Tue Mar 26 18:57:20 EET 2019
+DEBUG | 2019-03-26 18:57:58 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-26 18:57:58 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+DEBUG | 2019-03-26 18:58:02 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:594) -- Refreshing ApplicationContext 'mainMvcConfig'
+DEBUG | 2019-03-26 18:58:04 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:54) -- initialising the handler methods
+INFO  | 2019-03-26 18:58:04 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:69) -- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+DEBUG | 2019-03-26 18:58:05 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office
+INFO  | 2019-03-26 18:58:05 | [main] controller.OfficeController	(OfficeController.java:27) -- findByTargetBetween start, min=300, max=600
+DEBUG | 2019-03-26 18:58:05 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:29) -- findByTargetBetween, min=300, max=600
+DEBUG | 2019-03-26 18:58:05 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:32) -- findByTargetBetween, result=[]
+INFO  | 2019-03-26 18:58:05 | [main] controller.OfficeController	(OfficeController.java:33) -- findOfficeByTargetBetween done.
+DEBUG | 2019-03-26 18:58:06 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/111111
+INFO  | 2019-03-26 18:58:06 | [main] controller.OfficeController	(OfficeController.java:40) -- findOfficeById start, id=111111
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:46) -- findOfficeByCity, city=111111
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:48) -- findOfficeByCity, result=dataBase.entity.Office@1e194966 [office='111111' city='Stormwind' region='null' target='1488' sales='67' ]
+INFO  | 2019-03-26 18:58:06 | [main] controller.OfficeController	(OfficeController.java:42) -- findOfficeById end
+DEBUG | 2019-03-26 18:58:06 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/8841
+INFO  | 2019-03-26 18:58:06 | [main] controller.OfficeController	(OfficeController.java:62) -- Deleting office id=8841
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:68) -- delete Office, office=8841
+WARN  | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:72) -- Can't delete Office office8841, because it doesn't exist
+WARN  | 2019-03-26 18:58:06 | [main] exception.ControllerExceptionHandler	(ControllerExceptionHandler.java:35) -- Unprocessable entity Can not delete Office 8841, because it doesn't exist
+DEBUG | 2019-03-26 18:58:06 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/8841
+INFO  | 2019-03-26 18:58:06 | [main] controller.OfficeController	(OfficeController.java:40) -- findOfficeById start, id=8841
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:46) -- findOfficeByCity, city=8841
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:48) -- findOfficeByCity, result=null
+INFO  | 2019-03-26 18:58:06 | [main] controller.OfficeController	(OfficeController.java:42) -- findOfficeById end
+DEBUG | 2019-03-26 18:58:06 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/111111
+INFO  | 2019-03-26 18:58:06 | [main] controller.OfficeController	(OfficeController.java:62) -- Deleting office id=111111
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:68) -- delete Office, office=111111
+ERROR | 2019-03-26 18:58:06 | [main] exception.ControllerExceptionHandler	(ControllerExceptionHandler.java:27) -- Unexpected exception org.hibernate.PropertyValueException: not-null property references a null or transient value : dataBase.entity.Office.region; nested exception is javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : dataBase.entity.Office.region
+DEBUG | 2019-03-26 18:58:06 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/8841
+INFO  | 2019-03-26 18:58:06 | [main] controller.OfficeController	(OfficeController.java:48) -- Updating Office id=8841, city=Noir
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:46) -- findOfficeByCity, city=8841
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:48) -- findOfficeByCity, result=null
+WARN  | 2019-03-26 18:58:06 | [main] controller.OfficeController	(OfficeController.java:51) -- Updating failed, Office is null
+WARN  | 2019-03-26 18:58:06 | [main] exception.ControllerExceptionHandler	(ControllerExceptionHandler.java:35) -- Unprocessable entity Could not update Office id= 8841 , it doesn't exist.
+DEBUG | 2019-03-26 18:58:06 | [main] web.PropertySourcedRequestMappingHandlerMapping	(PropertySourcedRequestMappingHandlerMapping.java:108) -- looking up handler for path: /office/111111
+INFO  | 2019-03-26 18:58:06 | [main] controller.OfficeController	(OfficeController.java:48) -- Updating Office id=111111, city=Gotham
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:46) -- findOfficeByCity, city=111111
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:48) -- findOfficeByCity, result=dataBase.entity.Office@2299f6d7 [office='111111' city='Stormwind' region='null' target='1488' sales='67' ]
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:61) -- update Office, office=dataBase.entity.Office@2299f6d7 [office='111111' city='Gotham' region='null' target='1488' sales='67' ]
+DEBUG | 2019-03-26 18:58:06 | [main] service.OfficesServiceImpl	(OfficesServiceImpl.java:63) -- update Office completed
+ERROR | 2019-03-26 18:58:06 | [main] internal.ExceptionMapperStandardImpl	(ExceptionMapperStandardImpl.java:39) -- HHH000346: Error during managed flush [org.hibernate.PropertyValueException: not-null property references a null or transient value : dataBase.entity.Office.region]
+ERROR | 2019-03-26 18:58:06 | [main] exception.ControllerExceptionHandler	(ControllerExceptionHandler.java:27) -- Unexpected exception org.hibernate.PropertyValueException: not-null property references a null or transient value : dataBase.entity.Office.region; nested exception is javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : dataBase.entity.Office.region
+DEBUG | 2019-03-26 18:58:06 | [main] support.AbstractApplicationContext	(AbstractApplicationContext.java:1002) -- Closing ApplicationContext 'mainMvcConfig', started on Tue Mar 26 18:58:02 EET 2019
+DEBUG | 2019-03-26 19:13:02 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-26 19:13:03 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
+DEBUG | 2019-03-26 20:46:04 | [main] jpa.HibernatePersistenceProvider	(HibernatePersistenceProvider.java:38) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-26 20:46:04 | [main] config.DataConfig	(DataConfig.java:77) -- Establish connection to DB=jdbc:oracle:thin:@localhost:1521:XE
+INFO  | 2019-03-27 19:12:40 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=404, city='Kyiv', region='Kyivsky', officeDetails=springData.dto.OfficeDetails@3f197a46}
+INFO  | 2019-03-27 19:12:40 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@3daa422a [office='404' city='Kyiv' region='Kyivsky' target='45000' sales='50000' ]
+INFO  | 2019-03-27 19:13:19 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=404, city='Kyiv', region='Kyivsky', officeDetails=springData.dto.OfficeDetails@31368b99}
+INFO  | 2019-03-27 19:13:19 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@7ed7259e [office='404' city='Kyiv' region='Kyivsky' target='45000' sales='50000' ]
+INFO  | 2019-03-27 19:15:16 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=404, city='Kyiv', region='Kyivsky', officeDetails=springData.dto.OfficeDetails@3f197a46}
+INFO  | 2019-03-27 19:15:16 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@3daa422a [office='404' city='Kyiv' region='Kyivsky' target='45000' sales='50000' ]
+INFO  | 2019-03-27 19:15:47 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=404, city='Kyiv', region='Kyivsky', officeDetails=springData.dto.OfficeDetails@3f197a46}
+INFO  | 2019-03-27 19:15:47 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@3daa422a [office='404' city='Kyiv' region='Kyivsky' target='45000' sales='50000' ]
+DEBUG | 2019-03-27 19:29:32 | [main] logging.LoggerFactory	(LoggerFactory.java:22) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-27 22:09:00 | [main] logging.LoggerFactory	(LoggerFactory.java:22) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-27 22:11:56 | [main] logging.LoggerFactory	(LoggerFactory.java:22) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-27 22:15:55 | [main] logging.LoggerFactory	(LoggerFactory.java:22) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-27 22:33:24 | [main] logging.LoggerFactory	(LoggerFactory.java:22) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-28 11:18:55 | [main] logging.LoggerFactory	(LoggerFactory.java:22) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-28 14:28:41 | [main] logging.LoggerFactory	(LoggerFactory.java:22) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+DEBUG | 2019-03-28 14:35:11 | [main] logging.LoggerFactory	(LoggerFactory.java:22) -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+INFO  | 2019-03-28 14:42:34 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=404, city='Kyiv', region='Kyivsky', officeDetails=springData.dto.OfficeDetails@50b472aa}
+INFO  | 2019-03-28 14:42:34 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@3d51f06e [office='404' city='Kyiv' region='Kyivsky' target='45000' sales='50000' ]
+INFO  | 2019-03-28 14:45:44 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=404, city='Kyiv', region='Kyivsky', officeDetails=springData.dto.OfficeDetails@3911c2a7}
+INFO  | 2019-03-28 14:45:44 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@3427b02d [office='404' city='Kyiv' region='Kyivsky' target='45000' sales='50000' ]
+INFO  | 2019-03-28 14:46:17 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=404, city='Kyiv', region='Kyivsky', officeDetails=springData.dto.OfficeDetails@5e82df6a}
+INFO  | 2019-03-28 14:46:17 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@72f926e6 [office='404' city='Kyiv' region='Kyivsky' target='45000' sales='50000' ]
+INFO  | 2019-03-28 18:40:33 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=105, city='Kyiv', region='Street', officeDetails=springData.dto.OfficeDetails@1139b2f3}
+INFO  | 2019-03-28 18:40:33 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@2145b572 [office='105' city='Kyiv' region='Street' target='45000' sales='49000' ]
+INFO  | 2019-03-28 18:43:31 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=105, city='Kyiv', region='Street', officeDetails=springData.dto.OfficeDetails@1817d444}
+INFO  | 2019-03-28 18:43:31 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@27ce24aa [office='105' city='Kyiv' region='Street' target='45000' sales='49000' ]
+INFO  | 2019-03-28 18:50:24 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=105, city='Kyiv', region='Street', officeDetails=springData.dto.OfficeDetails@31368b99}
+INFO  | 2019-03-28 18:50:24 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@7ed7259e [office='105' city='Kyiv' region='Street' target='45000' sales='49000' ]
+INFO  | 2019-03-28 18:52:26 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=105, city='Kyiv', region='Street', officeDetails=OfficeDetails{target=45000, sales=49000}}
+INFO  | 2019-03-28 18:52:27 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@15eb5ee5 [office='105' city='Kyiv' region='Street' target='45000' sales='49000' ]
+INFO  | 2019-03-28 18:54:46 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:16) -- createOffice, officeRequest=OfficeRequest{office=105, city='Kyiv', region='Street', officeDetails=OfficeDetails{target=45000, sales=49000}}
+INFO  | 2019-03-28 18:54:47 | [main] service.OfficeCreatorImpl	(OfficeCreatorImpl.java:25) -- createOffice, office, that was created after=dataBase.entity.Office@7a13837e [office='105' city='Kyiv' region='Street' target='45000' sales='49000' ]

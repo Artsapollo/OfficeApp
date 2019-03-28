@@ -22,6 +22,7 @@ public class OfficeRequestTest {
     public void setUp() {
         LocalValidatorFactoryBean localValidatorFactory = new LocalValidatorFactoryBean();
         localValidatorFactory.setProviderClass(HibernateValidator.class);
+        localValidatorFactory.afterPropertiesSet();
         validator = localValidatorFactory;
     }
 
