@@ -1,6 +1,8 @@
 package springData.controller;
 
 import dataBase.entity.Office;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.Authorization;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,6 +52,7 @@ public class OfficeController {
     }
 
     @PostMapping
+    @ApiOperation(authorizations = { @Authorization(value = "basicAuthorization") }, value = "addOffice")
     public void addOffice (@Valid @RequestBody OfficeRequest officeRequest){
         LOG.info("addOffice start, officeRequest={}", officeRequest);
         Office office = officeCreator.createOffice(officeRequest);
@@ -60,6 +63,7 @@ public class OfficeController {
 
 
     @PutMapping("/{id}")
+    @ApiOperation(authorizations = { @Authorization(value = "basicAuthorization") }, value = "updateOffice")
     public void updateOfficeById(@PathVariable("id") Integer id, @RequestParam("city") String city) {
         LOG.info("Updating Office id={}, city={}", id, city);
         Office office = officesService.findOfficeById(BigDecimal.valueOf(id));
@@ -74,6 +78,7 @@ public class OfficeController {
     }
 
     @DeleteMapping("/{id}")
+    @ApiOperation(authorizations = { @Authorization(value = "basicAuthorization") }, value = "deleteOffice")
     public void deleteOfficeById(@PathVariable("id") Integer id) {
         LOG.info("Deleting office id={}", id);
         officesService.deleteOffice(BigDecimal.valueOf(id));
