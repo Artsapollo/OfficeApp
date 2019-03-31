@@ -11,8 +11,33 @@
     <packaging>war</packaging>
 
     <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.plugin>3.8.0</maven.compiler.plugin>
+        <maven.war.plugin>2.3</maven.war.plugin>
+        <log4j2-core.version>2.11.1</log4j2-core.version>
+        <disruptor.version>3.4.2</disruptor.version>
+        <javax-mail.version>1.4</javax-mail.version>
+        <smtp.version>1.4.5</smtp.version>
+        <ojdbc.version>1.0</ojdbc.version>
+        <c3p0.version>0.9.1.2</c3p0.version>
         <junit.version>4.12</junit.version>
-        <mockito.version>2.23.4</mockito.version>
+        <h2.version>1.4.198</h2.version>
+        <mockito.core.version>2.23.4</mockito.core.version>
+        <hibernate.core.version>5.4.1.Final</hibernate.core.version>
+        <javax.servlet.api.version>4.0.1</javax.servlet.api.version>
+        <jackson.databind.version>2.9.8</jackson.databind.version>
+        <spring.version>5.1.5.RELEASE</spring.version>
+        <spring.context.version>5.1.5.RELEASE</spring.context.version>
+        <spring.webmvc.version>5.1.5.RELEASE</spring.webmvc.version>
+        <spring.data.jpa.version>2.1.5.RELEASE</spring.data.jpa.version>
+        <spring.test.version>5.1.5.RELEASE</spring.test.version>
+        <hibernate-validator.version>6.0.15.Final</hibernate-validator.version>
+        <javax.el-api.version>3.0.0</javax.el-api.version>
+        <glassfish-javax.el.version>3.0.0</glassfish-javax.el.version>
+        <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
+        <javax.ws.rs.version>2.1.1</javax.ws.rs.version>
+        <io.springfox.version>2.9.2</io.springfox.version>
+        <spring.security.version>5.1.4.RELEASE</spring.security.version>
     </properties>
     <build>
         <plugins>
@@ -38,137 +63,84 @@
 
     <dependencies>
 
-        <!--Testing-->
+        <!-- Spring Security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring.security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring.security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <version>${spring.security.version}</version>
+            <scope>test</scope>
+        </dependency>
 
+        <!-- JSR380 java bean validation -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+            <version>${javax.el-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.el</artifactId>
+            <version>${glassfish-javax.el.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>${javax.annotation-api.version}</version>
+        </dependency>
+
+        <!-- Swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${io.springfox.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${io.springfox.version}</version>
+        </dependency>
+
+        <!-- Rest -->
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>${javax.ws.rs.version}</version>
+        </dependency>
+
+        <!--For tests -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-            <version>2.25.1</version>
+            <version>${mockito.core.version}</version>
             <scope>test</scope>
-        </dependency>
-
-
-        <!--For log -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.11.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.lmax</groupId>
-            <artifactId>disruptor</artifactId>
-            <version>3.4.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.mail</groupId>
-            <artifactId>javax.mail</artifactId>
-            <version>1.6.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.mail</groupId>
-            <artifactId>smtp</artifactId>
-            <version>1.6.1</version>
-        </dependency>
-
-        <!-- slf4j-api -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.6.4</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <scope>runtime</scope>
-            <version>1.0.0</version>
-        </dependency>
-
-        <!-- OJDBC8 -->
-
-        <dependency>
-            <groupId>org.oracle</groupId>
-            <artifactId>ojdbc8</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/ojdbc8.jar</systemPath>
-        </dependency>
-
-        <!-- c3p0 -->
-
-        <dependency>
-            <groupId>com.mchange</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>[0.9.5.3,)</version>
-        </dependency>
-
-        <!-- JPA -->
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>eclipselink</artifactId>
-            <version>2.7.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.eclipse.persistence</groupId>
-                    <artifactId>javax.persistence</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>javax.persistence</artifactId>
-            <version>2.1.1</version>
-        </dependency>
-
-
-        <!-- Hibernate -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>5.4.1.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-c3p0</artifactId>
-            <version>5.4.1.Final</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.tomcat</groupId>
-            <artifactId>tomcat-catalina</artifactId>
-            <version>9.0.16</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.9.8</version>
-        </dependency>
-
-        <!--- Spring -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>5.1.5.RELEASE</version>
-        </dependency>
-
-        <!-- Spring Data -->
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
-            <version>2.1.5.RELEASE</version>
         </dependency>
 
         <!-- Spring test -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>5.1.5.RELEASE</version>
+            <version>${spring.test.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -176,54 +148,85 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.4.198</version>
+            <version>${h2.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Oracle JDBC -->
+        <dependency>
+            <groupId>org.oracle</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/ojdbc8.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>${c3p0.version}</version>
+        </dependency>
+
+        <!-- For log -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>${disruptor.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>${javax-mail.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>smtp</artifactId>
+            <version>${smtp.version}</version>
+        </dependency>
+
+        <!-- Hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.core.version}</version>
+        </dependency>
+
+        <!-- Spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.context.version}</version>
+        </dependency>
+
+        <!-- Spring Data -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring.data.jpa.version}</version>
         </dependency>
 
         <!-- Spring MVC -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>5.1.5.RELEASE</version>
+            <version>${spring.webmvc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet.api.version}</version>
         </dependency>
 
-        <!-- Swagger -->
+        <!--For json -->
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.9.2</version>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.databind.version}</version>
         </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.9.2</version>
-        </dependency>
-
-        <!-- Rest -->
-
-        <dependency>
-            <groupId>javax.ws.rs</groupId>
-            <artifactId>javax.ws.rs-api</artifactId>
-            <version>2.1.1</version>
-        </dependency>
-
-        <!-- JSR380 java bean validation -->
-        <dependency>
-            <groupId>org.hibernate.validator</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>6.0.15.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>javax.el-api</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish</groupId>
-            <artifactId>javax.el</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-
     </dependencies>
 
 </project>

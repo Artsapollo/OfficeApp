@@ -11,17 +11,17 @@ public class DtoModelsUtil {
     private static final BigDecimal OFFICE = BigDecimal.valueOf(105);
     private static final String CITY = "Kyiv";
     private static final String REGION = "Street";
-    private static final BigDecimal TARGET = BigDecimal.valueOf(45000);
-    private static final BigDecimal SALES = BigDecimal.valueOf(49000);
+    private static final BigDecimal TARGET = BigDecimal.valueOf(450);
+    private static final BigDecimal SALES = BigDecimal.valueOf(490);
 
     public static Office office(){
-        Office expected = new Office();
-        expected.setOffice(OFFICE);
-        expected.setCity(CITY);
-        expected.setRegion(REGION);
-        expected.setTarget(TARGET);
-        expected.setSales(SALES);
-        return expected;
+        Office office = new Office();
+        office.setOffice(OFFICE);
+        office.setCity(CITY);
+        office.setRegion(REGION);
+        office.setTarget(TARGET);
+        office.setSales(SALES);
+        return office;
     }
 
     public static OfficeRequest officeRequest(){

@@ -93,22 +93,22 @@ public class OfficeControllerTest {
     @Test
     public void testUpdateOfficeByIdExist() throws Exception {
         MvcResult mvcResult = mockMvc.perform(put("/office/{id}", "111111").param("city", "Gotham")).andDo(print()).andReturn();
-        assertNotEquals(Status.OK.getStatusCode(), mvcResult.getResponse().getStatus());
+        assertEquals(Status.OK.getStatusCode(), mvcResult.getResponse().getStatus());
     }
 
     @Test
     public void testUpdateOfficeByIdNotExist() throws Exception {
-        MvcResult mvcResult = mockMvc.perform(put("/office/{id}", "8841").param("city", "Noir")).andReturn();
+        MvcResult mvcResult = mockMvc.perform(put("/office/{id}", "8841").param("city", "Noir")).andDo(print()).andReturn();
         assertEquals(422, mvcResult.getResponse().getStatus());
         assertEquals("application/json;charset=UTF-8", mvcResult.getResponse().getContentType());
         ErrorMessage errorMessage = mapper.readValue(mvcResult.getResponse().getContentAsString(), ErrorMessage.class);
-        assertNotEquals("Could not update Office id=8841, because it doesn't exist.", errorMessage.getMessage());
+        assertEquals("Could not update Office id= 8841 , it doesn't exist.", errorMessage.getMessage());
     }
 
     @Test
     public void testDeleteOfficeByIdExist() throws Exception {
         MvcResult mvcResult = mockMvc.perform(delete("/office/{id}", "111111")).andDo(print()).andReturn();
-        assertNotEquals(Status.OK.getStatusCode(), mvcResult.getResponse().getStatus());
+        assertEquals(Status.OK.getStatusCode(), mvcResult.getResponse().getStatus());
     }
 
     @Test

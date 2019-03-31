@@ -26,27 +26,23 @@ public class Office implements java.io.Serializable {
     @Column(name = "SALES", nullable = false, precision = 22, scale = 0)
     private BigDecimal sales;
 
-//    @OneToMany(fetch = FetchType.LAZY)
-//    private Set<Salesrep> salesreps = new HashSet<>();
-
     public Office() {
     }
 
-    public Office(BigDecimal office, String city, String region, java.math.BigDecimal sales) {
+    public Office(BigDecimal office, String city, String region, BigDecimal sales) {
         this.office = office;
         this.city = city;
         this.region = region;
         this.sales = sales;
     }
 
-    public Office(BigDecimal office, String city, String region, java.math.BigDecimal target,
-                  java.math.BigDecimal sales, Set<Salesrep> salesreps) {
+    public Office(BigDecimal office, String city, String region, BigDecimal target,
+                  BigDecimal sales) {
         this.office = office;
         this.city = city;
         this.region = region;
         this.target = target;
         this.sales = sales;
-//        this.salesreps = salesreps;
     }
 
 
@@ -66,7 +62,6 @@ public class Office implements java.io.Serializable {
         this.city = city;
     }
 
-
     public String getRegion() {
         return this.region;
     }
@@ -75,29 +70,22 @@ public class Office implements java.io.Serializable {
         this.region = region;
     }
 
-    public java.math.BigDecimal getTarget() {
+    public BigDecimal getTarget() {
         return this.target;
     }
 
-    public void setTarget(java.math.BigDecimal target) {
+    public void setTarget(BigDecimal target) {
         this.target = target;
     }
 
-    public java.math.BigDecimal getSales() {
+    public BigDecimal getSales() {
         return this.sales;
     }
 
-    public void setSales(java.math.BigDecimal sales) {
+    public void setSales(BigDecimal sales) {
         this.sales = sales;
     }
 
-//    public Set<Salesrep> getSalesreps() {
-//        return this.salesreps;
-//    }
-//
-//    public void setSalesreps(Set<Salesrep> salesreps) {
-//        this.salesreps = salesreps;
-//    }
 
     @Override
     public String toString() {

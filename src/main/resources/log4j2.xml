@@ -29,17 +29,17 @@
               SMTPHost="smtp.gmail.com"
               SMTPPort="465"
               SMTPUsername="lifeguardtrashbox@gmail.com"
-              SMTPPassword="xxxxxxxxxxx"
+              SMTPPassword="xxxxxxxx"
               To="lifeguardtrashbox@gmail.com"
-              from="lifeguardtrashbox@gmail.com"
+              from="OfficeApp"
               Subject="Log Error">
         </SMTP>
 
     </Appenders>
     <Loggers>
-        <AsyncLogger name="com.mchange" level="error" />
-        <AsyncLogger name="org.hibernate" level="error" />
-        <AsyncLogger name="org.springframework" level="error" />
+        <AsyncLogger name="com.mchange" level="ERROR" />
+        <AsyncLogger name="org.hibernate" level="ERROR" />
+        <AsyncLogger name="org.springframework" level="ERROR" />
 
         <AsyncLogger name="error-logger" level="ERROR">
             <AppenderRef ref="JARVIS" />
