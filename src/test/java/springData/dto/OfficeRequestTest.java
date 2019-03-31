@@ -49,7 +49,7 @@ public class OfficeRequestTest {
         officeRequest.setOffice(null);
         Errors errors = new BeanPropertyBindingResult(officeRequest, "officeRequest");
         validator.validate(officeRequest, errors);
-        assertEquals(errors.getFieldError("office").getDefaultMessage(), "1");
+        assertEquals(errors.getFieldError("office").getDefaultMessage(), "6");
     }
 
     @Test
@@ -67,13 +67,13 @@ public class OfficeRequestTest {
         officeRequest.setCity(null);
         Errors errors = new BeanPropertyBindingResult(officeRequest, "officeRequest");
         validator.validate(officeRequest, errors);
-        assertEquals(errors.getFieldError("city").getDefaultMessage(), "2");
+        assertEquals(errors.getFieldError("city").getDefaultMessage(), "6");
     }
 
     @Test
     public void testOfficeRequestRegionIsNumber() {
         OfficeRequest officeRequest = DtoModelsUtil.officeRequest();
-        officeRequest.setRegion("9032492");
+        officeRequest.setRegion("123");
         Errors errors = new BeanPropertyBindingResult(officeRequest, "officeRequest");
         validator.validate(officeRequest, errors);
         assertEquals(errors.getFieldError("region").getDefaultMessage(), "3");
@@ -85,7 +85,7 @@ public class OfficeRequestTest {
         officeRequest.setRegion(null);
         Errors errors = new BeanPropertyBindingResult(officeRequest, "officeRequest");
         validator.validate(officeRequest, errors);
-        assertEquals(errors.getFieldError("region").getDefaultMessage(), "3");
+        assertEquals(errors.getFieldError("region").getDefaultMessage(), "6");
     }
 
     @Test
@@ -94,6 +94,6 @@ public class OfficeRequestTest {
         officeRequest.setOfficeDetails(null);
         Errors errors = new BeanPropertyBindingResult(officeRequest, "officeRequest");
         validator.validate(officeRequest, errors);
-        assertEquals(errors.getFieldError("officeDetails").getDefaultMessage(), "4");
+        assertEquals(errors.getFieldError("officeDetails").getDefaultMessage(), "6");
     }
 }

@@ -1,0 +1,230 @@
+{
+  "info": {
+    "_postman_id": "6730c441-4917-4020-8e11-196ce4bb836b",
+    "name": "OfficeApp",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "findOfficeByTargetBetween",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8090/office?max=600&min=300",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "office"
+          ],
+          "query": [
+            {
+              "key": "max",
+              "value": "600"
+            },
+            {
+              "key": "min",
+              "value": "300"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getOfficById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8090/office/143",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "office",
+            "143"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateOffice",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "test",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "test",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8090/office/143?city=Belview",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "office",
+            "143"
+          ],
+          "query": [
+            {
+              "key": "city",
+              "value": "Belview"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteOffice",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "test",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "test",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8090/office/143",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "office",
+            "143"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "addOffice",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "test",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "test",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"city\": \"BelAir\",\r\n  \"office\": 143,\r\n  \"officeDetails\": {\r\n    \"sales\": 199,\r\n    \"target\": 250\r\n  },\r\n  \"region\": \"Ocean\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8090/office",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "office"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "39806340-54e4-4fe5-8bce-4c272d936379",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "077beefe-6360-4fd9-8057-af639b7fd9e9",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@ import springData.config.MainMvcConfig;
 public class WebApplicationInitializer  extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses(){
-        return null;
+        return new Class[] {SpringSecurityConfig.class};
     }
 
     @Override
