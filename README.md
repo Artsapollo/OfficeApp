@@ -6,3 +6,5 @@ Java: spring-data (JPA hibernate provider), spring-security, spring mvc, json, J
 DB: OracleDb 
 Test: junit, mockito, spring-test
 
+![swagger](https://user-images.githubusercontent.com/38109326/55285974-2019a300-539e-11e9-8555-ed55a175b626.jpg)
+
