@@ -14,7 +14,7 @@
         <java.version>1.8</java.version>
         <maven.compiler.plugin>3.8.0</maven.compiler.plugin>
         <maven.war.plugin>2.3</maven.war.plugin>
-        <log4j2-core.version>2.11.1</log4j2-core.version>
+        <log4j2-core.version>2.13.2</log4j2-core.version>
         <disruptor.version>3.4.2</disruptor.version>
         <javax-mail.version>1.4</javax-mail.version>
         <smtp.version>1.4.5</smtp.version>
