@@ -37,7 +37,7 @@
         <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
         <javax.ws.rs.version>2.1.1</javax.ws.rs.version>
         <io.springfox.version>2.9.2</io.springfox.version>
-        <spring.security.version>5.1.4.RELEASE</spring.security.version>
+        <spring.security.version>5.2.10.RELEASE</spring.security.version>
     </properties>
     <build>
         <plugins>
