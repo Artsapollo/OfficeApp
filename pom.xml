@@ -21,7 +21,7 @@
         <ojdbc.version>1.0</ojdbc.version>
         <c3p0.version>0.9.1.2</c3p0.version>
         <junit.version>4.12</junit.version>
-        <h2.version>1.4.198</h2.version>
+        <h2.version>2.0.206</h2.version>
         <mockito.core.version>2.23.4</mockito.core.version>
         <hibernate.core.version>5.4.1.Final</hibernate.core.version>
         <javax.servlet.api.version>4.0.1</javax.servlet.api.version>
